@@ -1,0 +1,325 @@
+/* Reset de margens e padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  overflow-x: hidden; /* Previne scroll horizontal */
+}
+
+h1 {
+  color: rgb(31, 30, 30);
+  margin-top: 15px;
+  font-size: 30px;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  margin-top: 20px;
+  font-family: 'Lexend', sans-serif;
+}
+
+p {
+  color: rgb(0, 0, 0);
+  margin-top: 25px;
+  font-size: 22px;
+  font-family: "Raleway", sans-serif;
+}
+
+.imagem {
+  width: 35%;
+  margin-top: -19%;
+  margin-left: 7%;
+}
+
+/* NAV FAIXA MENU */
+.logo {
+  width: 20%;
+  margin-left: 10%;
+}
+
+.chamada {
+  text-align: center;
+  margin-top: 115px;
+  font-size: 42px;
+  color: green;
+  margin-left: 40%;
+}
+
+.nav {
+  max-width: 1280px;
+  height: 100px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 60px;
+  margin-top: -80px;
+  background-color: #ffffff;
+}
+
+.nav-list {
+  display: flex;
+  gap: 70px;
+  list-style: none;
+  margin-top: -215px;
+  margin-left: 45%;
+}
+
+.nav-list a {
+  font-size: 31px;
+  text-decoration: none;
+  color: #026e02;
+  padding-block: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #d5e035;
+}
+
+/* Estilos do Menu Hambúrguer */
+.hamburger {
+  display: none; /* Escondido por padrão (aparece apenas no mobile) */
+  border: none;
+  background: none;
+  border-top: 3px solid #026e02;
+  cursor: pointer;
+  width: 30px;
+  z-index: 1000;
+  position: relative;
+}
+
+.hamburger::after,
+.hamburger::before {
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #026e02;
+  margin-top: 5px;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* Quando o menu estiver ativo (mobile) */
+.nav.active .nav-list {
+  clip-path: circle(100% at 50% 50%);
+  pointer-events: all;
+}
+
+
+.nav.active .nav-list a {
+  opacity: 1;
+}
+
+.nav.active .hamburger {
+  position: fixed;
+  right: 40px;
+  top: 40px;
+  border-top-color: transparent;
+}
+
+.nav.active .hamburger::before {
+  transform: rotate(135deg);
+}
+
+.nav.active .hamburger::after {
+  transform: rotate(-135deg);
+  top: -8px;
+}
+
+.secao {
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0px 10px 10px 10px;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+
+.conteudo {
+  border-style: solid;
+  margin-top: 60px;
+  margin-left: 0px;
+  border-width: 6px 0px 6px 0px;
+  border-radius: 5px;
+  border-color: #51ac51;
+  box-shadow: 0px 0px 21px 4px rgba(0, 0, 0, 0.397);
+  background-color: #b3f7a6;
+  flex-wrap: wrap;
+  width: 360px;
+  height: 405px;
+  padding: 30px 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.conteudo:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.rodape {
+  height: 260px;
+  padding-top: 20px;
+  background-color: #84e984;
+}
+
+.ins1 {
+  width: 3%;
+  margin-left: 32%;
+  margin-top: 45px;
+}
+
+.insta1 {
+  text-align: center;
+  margin-top: -40px;
+  margin-left: 3px;
+  font-size: 26px;
+  font-family: 'raleway', sans-serif;
+  font-weight: bold;
+}
+
+.tel {
+  width: 5%;
+  margin-left: 395px;
+  margin-top: 30px;
+}
+
+.telefone {
+  text-align: center;
+  margin-top: -55px;
+  margin-left: -50px;
+  font-size: 28px;
+  font-family: 'raleway', sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  h1 {
+      color: rgb(7, 7, 7);
+      margin-top: 15px;
+      font-size: 29px
+  }
+  
+  p {
+      color: rgb(2, 2, 2);
+      margin-top: 25px;
+      font-size: 22px;
+      font-family: "Raleway", sans-serif;
+  }
+
+  .imagem {
+      width: 40%;
+      margin-top: -30%;
+      margin-left: 0%;
+  }
+
+  .chamada {
+      text-align: center;
+      margin-top: 29px;
+      font-size: 24px;
+      color: green;
+      margin-right: 20px;
+  }
+  
+  .logo {
+      width: 40%;
+  }
+
+  /* Menu Hambúrguer visível apenas no mobile */
+  .hamburger {
+      display: block;
+      position: fixed;
+      right: 30px;
+      top: 75px;
+  }
+
+  .nav-list {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #dfdfdf;
+      clip-path: circle(100px at 90% -15%);
+      transition: 1s ease-out;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0;
+      pointer-events: none;
+      margin-top: 0;
+      margin-left: 0;
+      padding-top: 100px;
+  }
+
+  .nav-list a {
+      font-size: 24px;
+      opacity: 0;
+      color: #016109 ;
+  }
+
+  .nav-list li {
+      opacity: 1;
+  }
+
+  .nav-list a:hover {
+      color: #d5e035 !important;
+  }
+  
+  .secao {
+      margin-top: 0px;
+      width: 100%;
+  }
+  
+  .conteudo {
+      margin-top: 20px;
+      width: 95%;
+      height: 100%;
+  }
+
+  .rodape {
+      height: 250px;
+      padding-top: 20px;
+  }
+
+  .insta1 {
+      text-align: center;
+      margin-top: -40px;
+      margin-left: 35px;
+      font-size: 24px;
+      font-family: 'raleway', sans-serif;
+      font-weight: bold;
+  }
+  
+  .ins1 {
+      width: 8%;
+      margin-left: 5px;
+      margin-top: 35px;
+  }
+
+  .tel {
+      width: 12%;
+      margin-left: 0px;
+      margin-top: 30px;
+  }
+  
+  .telefone {
+      text-align: center;
+      margin-top: -45px;
+      margin-left: -15px;
+      font-size: 24px;
+      font-family: 'raleway', sans-serif;
+      font-weight: bold;
+  }
+}
