@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #ffffff;
+    overflow-x: hidden; /* Previne scroll horizontal */
+}
+
+.cabecalho{
+    background-color: #bbdfb0;
+    height: 50px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 38px;
+    
+}
+
+img{
+    width: 97%;
+    margin-top: -30px;
+}
+
+.foto2{
+    width: 112%;
+    margin-top: -29px;
+    margin-left: -18px;
+}
+
+.biografia{
+    margin-left: 35%;
+    font-size: 26px;
+    text-align: left;
+    margin-top: -390px;
+}
+
+
+.conteudo {
+    border-style: solid;
+    margin-top: 50PX;
+    margin-left: 3%;
+    border-width: 4px 4px 4px 4px;
+    border-radius: 5px;
+    background-color: #c6c5c0;
+    flex-wrap: wrap;
+    width: 358px;
+    height: 410px;
+    padding: 30px 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.bio2{
+
+    margin-left: 3%;
+    font-size: 26px;
+    text-align: left;
+    margin-top: -390px;
+    margin-right: 35%;
+
+
+}
+
+.conteudo2 {
+    border-style: solid;
+    margin-top: 50PX;
+    margin-left: 70%;
+    border-width: 4px 4px 4px 4px;
+    border-radius: 5px;
+    background-color: #c6c5c0;
+    flex-wrap: wrap;
+    width: 358px;
+    height: 410px;
+    padding: 30px 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.bio3{
+    margin-left: 15px;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.rodape {
+    height: 260px;
+    padding-top: 20px;
+    background-color: #84e984;
+  }
+  
+  .ins1 {
+    width: 3%;
+    margin-left: 32%;
+    margin-top: 45px;
+  }
+  
+  .insta1 {
+    text-align: center;
+    margin-top: -40px;
+    margin-left: 3px;
+    font-size: 26px;
+    font-family: 'raleway', sans-serif;
+    font-weight: bold;
+  }
+  
+  .tel {
+    width: 5%;
+    margin-left: 395px;
+    margin-top: 30px;
+  }
+  
+  .telefone {
+    text-align: center;
+    margin-top: -55px;
+    margin-left: -50px;
+    font-size: 28px;
+    font-family: 'raleway', sans-serif;
+    font-weight: bold;
+  }
+
+
+@media (max-width: 375px) {
+    .conteudo {
+        border-style: solid;
+        margin-left: 2%;
+        margin-top: 50PX;
+        border-width: 4px 4px 4px 4px;
+        border-radius: 5px;
+        background-color: #c6c5c0;
+        flex-wrap: wrap;
+        width: 358px;
+        height: 410px;
+        padding: 30px 20px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .biografia {
+     
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0px;
+      
+    }
+
+    .conteudo2{
+        border-style: solid;
+        margin-left: 2%;
+        margin-top: 50PX;
+        border-width: 4px 4px 4px 4px;
+        border-radius: 5px;
+        background-color: #c6c5c0;
+        flex-wrap: wrap;
+        width: 358px;
+        height: 410px;
+        padding: 30px 20px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .bio2{
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+    .bio3{
+        
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+
+    }
+
+    .rodape {
+        height: 340px;
+        padding-top: 20px;
+        width: 100%;
+    }
+  
+    .insta1 {
+        text-align: center;
+        margin-top: -40px;
+        margin-left: 35px;
+        font-size: 24px;
+        font-family: 'raleway', sans-serif;
+        font-weight: bold;
+    }
+    
+    .ins1 {
+        width: 8%;
+        margin-left: 5px;
+        margin-top: 35px;
+    }
+  
+    .tel {
+        width: 12%;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    
+    .telefone {
+        text-align: center;
+        margin-top: -45px;
+        margin-left: -15px;
+        font-size: 24px;
+        font-family: 'raleway', sans-serif;
+        font-weight: bold;
+    }
+
+
+
+}
+
+@media (min-width: 425px){
+    .conteudo {
+        border-style: solid;
+        margin-left: 8%;
+        margin-top: 50PX;
+        border-width: 4px 4px 4px 4px;
+        border-radius: 5px;
+        background-color: #c6c5c0;
+        flex-wrap: wrap;
+        width: 358px;
+        height: 410px;
+        padding: 30px 20px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .biografia {
+     
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0px;
+      
+    }
+
+    .conteudo2{
+        border-style: solid;
+        margin-left: 8%;
+        margin-top: 50PX;
+        border-width: 4px 4px 4px 4px;
+        border-radius: 5px;
+        background-color: #c6c5c0;
+        flex-wrap: wrap;
+        width: 358px;
+        height: 410px;
+        padding: 30px 20px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .bio2{
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+    .bio3{
+        
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+
+    }
+
+    .rodape {
+        height: 340px;
+        padding-top: 20px;
+        width: 100%;
+    }
+  
+    .insta1 {
+        text-align: center;
+        margin-top: -40px;
+        margin-left: 35px;
+        font-size: 24px;
+        font-family: 'raleway', sans-serif;
+        font-weight: bold;
+    }
+    
+    .ins1 {
+        width: 8%;
+        margin-left: 5px;
+        margin-top: 35px;
+    }
+  
+    .tel {
+        width: 12%;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    
+    .telefone {
+        text-align: center;
+        margin-top: -45px;
+        margin-left: -15px;
+        font-size: 24px;
+        font-family: 'raleway', sans-serif;
+        font-weight: bold;
+    }
+
+
+
+}
+
+
+
+    
+@media (min-width: 768px){
+    .conteudo {
+        border-style: solid;
+        margin-left: 25%;
+        margin-top: 50PX;
+        border-width: 4px 4px 4px 4px;
+        border-radius: 5px;
+        background-color: #c6c5c0;
+        flex-wrap: wrap;
+        width: 358px;
+        height: 410px;
+        padding: 30px 20px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .biografia {
+     
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0px;
+      
+    }
+
+    .conteudo2{
+        border-style: solid;
+        margin-left: 25%;
+        margin-top: 50PX;
+        border-width: 4px 4px 4px 4px;
+        border-radius: 5px;
+        background-color: #c6c5c0;
+        flex-wrap: wrap;
+        width: 358px;
+        height: 410px;
+        padding: 30px 20px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .bio2{
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+    .bio3{
+        
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+
+    }
+
+    .rodape {
+        height: 340px;
+        padding-top: 20px;
+        width: 100%;
+    }
+  
+    .insta1 {
+        text-align: center;
+        margin-top: -40px;
+        margin-left: 35px;
+        font-size: 24px;
+        font-family: 'raleway', sans-serif;
+        font-weight: bold;
+    }
+    
+    .ins1 {
+        width: 8%;
+        margin-left: 5px;
+        margin-top: 35px;
+    }
+  
+    .tel {
+        width: 12%;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    
+    .telefone {
+        text-align: center;
+        margin-top: -45px;
+        margin-left: -15px;
+        font-size: 24px;
+        font-family: 'raleway', sans-serif;
+        font-weight: bold;
+    }
+
+
+}
+
+@media (min-width:1024px){
+    .conteudo {
+        border-style: solid;
+        margin-left: 30%;
+        margin-top: 50PX;
+        border-width: 4px 4px 4px 4px;
+        border-radius: 5px;
+        background-color: #c6c5c0;
+        flex-wrap: wrap;
+        width: 358px;
+        height: 410px;
+        padding: 30px 20px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .biografia {
+     
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0px;
+      
+    }
+
+    .conteudo2{
+        border-style: solid;
+        margin-left: 30%;
+        margin-top: 50PX;
+        border-width: 4px 4px 4px 4px;
+        border-radius: 5px;
+        background-color: #c6c5c0;
+        flex-wrap: wrap;
+        width: 358px;
+        height: 410px;
+        padding: 30px 20px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .bio2{
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+    .bio3{
+        
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+
+    }
+
+    .rodape {
+        height: 340px;
+        padding-top: 20px;
+        width: 100%;
+    }
+  
+    .insta1 {
+        text-align: center;
+        margin-top: -40px;
+        margin-left: 35px;
+        font-size: 24px;
+        font-family: 'raleway', sans-serif;
+        font-weight: bold;
+    }
+    
+    .ins1 {
+        width: 8%;
+        margin-left: 5px;
+        margin-top: 35px;
+    }
+  
+    .tel {
+        width: 12%;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    
+    .telefone {
+        text-align: center;
+        margin-top: -45px;
+        margin-left: -15px;
+        font-size: 24px;
+        font-family: 'raleway', sans-serif;
+        font-weight: bold;
+    }
+
+}
